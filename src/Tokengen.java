@@ -28,7 +28,7 @@ public class Tokengen extends HttpServlet {
 		data.put("token", token);
 		try {
 			MongoClientURI uri = new MongoClientURI(
-					"mongodb://user:pass@ds237735.mlab.com:37735/codeoff");
+					"");//insert your mongoDB URI
 			MongoClient client = new MongoClient(uri);
 			MongoDatabase db = client.getDatabase("codeoff");
 			MongoCollection tokens = db.getCollection("tokencollection");
