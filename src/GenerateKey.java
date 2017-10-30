@@ -21,14 +21,14 @@ public class GenerateKey extends HttpServlet {
 		resp.setContentType("text/html");
 		PrintWriter out = resp.getWriter();
 		String key = "";
-		String url = "http://codeoffapi.herokuapp.com/api/v1/nsdjbjsbdsv/1/generate";
+		String url = ""; //insert api url
 
 		String code = "";
 		try {
 			JSONObject json = null;
 			try {
 				json = new JSONObject(
-						readUrl("http://codeoffapi.herokuapp.com/api/v1/nsdjbjsbdsv/1/generate"));
+						readUrl("//insert api url"));
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
