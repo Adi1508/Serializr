@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 public class ValidateKey extends HttpServlet {
 
 	private String sendPost(String keycode) throws Exception {
-		String url = "https://codeoffapi.herokuapp.com/api/v1/nsdjbjsbdsv/validate";
+		String url = ""; //insert api url
 		URL obj = new URL(url);
 		HttpsURLConnection con = (HttpsURLConnection) obj.openConnection();
 
